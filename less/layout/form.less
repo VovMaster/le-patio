@@ -1,0 +1,246 @@
+.bg-color{
+	position: relative;
+	overflow: hidden;
+}
+.bg-image{
+	position: absolute;
+	top: 25px;
+	right: 0;
+}
+@media (min-width: 1460px) {
+	.row40{
+		margin-left: -40px;
+		margin-right: -40px;
+		> *{
+			padding: 0 40px;
+		}
+	}
+}
+.main-contact {
+	height: 100%;
+	padding: 215px 0 100px;
+	color: #fff;
+	position: relative;
+	h1{
+		font-family: "Foobar Pro";
+	}
+	.line{
+		background-color: @bg-white;
+		height: 5px;
+		width: 50px;
+	}
+}
+.form-style {
+	font-size: 15px;
+	line-height: 35px;
+	font-family: 'Gotham Book';
+}
+
+.phone {
+	font-size: 17px;
+	margin-bottom: 58px;
+	letter-spacing: 0.06em;
+}
+.form-control {
+	font-size: 15px;
+	line-height: 28px;
+	font-family: 'Gotham Book';
+	letter-spacing: 0;
+	color: #fff;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #fff;
+	border-top: 2px solid transparent;
+	background: transparent;
+	display: block;
+	width: 100%;
+	border-radius: 0;
+	padding: 0 6px;
+	height: 32px;
+	letter-spacing: 0;
+}
+.phone-circle {
+	height: 44px;
+	width: 44px;
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #fff;
+	border-radius: 100%;
+	line-height: 44px;
+	font-size: 24px;
+	padding-left: 7px;
+	margin: 0 18px 0 0;
+}
+.phone-content {
+	display: inline-block;
+	vertical-align: middle;
+}
+.checkbox {
+	display: inline-block;
+	vertical-align: top;
+	height: 14px;
+	width: 14px;
+	border: 1px solid #fff;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	margin: 10px 11px 0 0;
+	.icon-check {
+		opacity: 0;
+		font-size: 12px;
+		position: absolute;
+		top: -10px;
+		left: 0;
+	}
+}
+.checkbox-wrap {
+	display: block;
+	margin-bottom: 13px;
+	input {
+		display: none;
+		&:checked {
+			+ .checkbox {
+				.icon-check {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+.btn-form {
+	background: rgba(255, 255, 255, 0.2);
+	border: 1px solid #fff;
+	border-radius: 0;
+	font-size: 15px;
+	color: #fff;
+	text-align: center;
+	line-height: 20px;
+	display: block;
+	width: 100%;
+	height: 47px;
+	margin: 75px 0 0 0;
+	font-family: "Gotham Book";
+	letter-spacing: 0.12em;
+	&:hover {
+		background: rgba(255, 255, 255, 0.4);
+	}
+}
+.form-group {
+	margin-bottom: 22px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+*::-webkit-input-placeholder { 
+  color: #fff;
+  opacity:1;
+}
+*::-moz-placeholder { 
+  color: #fff;
+  opacity: 1;
+}
+*:-ms-input-placeholder { 
+  color: #fff;
+  opacity: 1;
+}
+*:-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.contact-container{
+	width: 57.8%;
+	position: relative;
+	&:before, &:after{
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: -6px;
+		width: 1px;
+		background-color: @bg-white;
+	}
+	&:before{
+		left: 59.5%;
+	}
+	&:after{
+		left: 108.5%;
+	}
+}
+.contact-info{
+	h4{
+		margin-top: 0;
+		margin-bottom: 33px;
+	}
+}
+@media (max-width: 1870px){
+	.bg-image{
+		width: 40%;
+	}
+}
+@media (max-width: 1500px){
+	.main-contact{
+		padding: 100px 0;
+	}
+}
+@media (min-width: 1460px){
+	.contact-info{
+		padding-right: 0;
+	}
+}
+@media (max-width: 1459px){
+	.contact-container:before {
+		left: 59%;
+	}
+	.contact-container::after {
+		left: 100%;
+		margin-left: 8px;
+	}
+}
+@media (max-width: 1350px){
+	.bg-image{
+		width: 36%;
+		top: 33%;
+	}
+	.phone-circle {
+		height: 32px;
+		width: 32px;
+		font-size: 16px;
+		line-height: 32px;
+		margin-right: 9px;
+	}
+	.phone {
+		letter-spacing: 0;
+		font-size: 14px;
+	}
+}
+@media (max-width: 991px) {
+	.contact-container:before {
+		left: 100%;
+		margin-left: 20px;
+	}	
+	.contact-container:after {
+		display: none;
+	}	
+	.contact-container {
+		width: 50%;
+	}
+	.contact-info {
+		margin-top: 60px;
+	}
+}
+@media (max-width: 767px) {
+	.bg-image {
+		float: right;
+		position: static;
+		max-width: 100%;
+		width: auto;
+	}
+	.contact-container {
+		width: 100%;
+		&:before, &:after {
+			display: none;
+		}
+	}
+	.main-contact {
+		padding-bottom: 50px;
+	}
+}
