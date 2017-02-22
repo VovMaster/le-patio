@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
 	
-	// $('.slider').slick({
-	//   dots: true,
-	//   infinite: true,
-	//   speed: 500
-	// });
+	$('.slider-content .slider').slick({
+	  dots: true,
+	  infinite: true,
+	  speed: 500
+	});
 	var timeoutID = 0;
 	
 	$('.slider-wrap-page').each(function() {
@@ -43,7 +43,12 @@ $(document).ready(function() {
 			}
 		});	
 
+
 	});
+
+	$('.content-plus').click(function() {
+		$(this).closest('.slider-wrap-page').toggleClass('slider-wrap-page-content-hide');
+	})
 
 
 	
