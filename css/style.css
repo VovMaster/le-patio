@@ -1857,27 +1857,26 @@ h6,
   }
 }
 .wrap-modal-window {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
   height: 100%;
   font-size: 0;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(178, 160, 107, 0.9);
   padding: 20px;
-  /*display: none;*/
+  color: #ffffff;
+  display: none;
 }
 .close-modal {
-  background-color: #f0f;
-  color: #fff;
-  width: 30px;
-  height: 30px;
+  width: 104px;
+  height: 112px;
   position: absolute;
-  top: 0;
+  top: 7px;
   right: 0;
-  font-weight: 800;
   cursor: pointer;
+  background-image: url(../images/close.png);
 }
 .wrap-modal-window:after {
   content: "";
@@ -1889,7 +1888,7 @@ h6,
   max-width: 40%;
   margin: auto;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
-  padding: 10px 130px 40px 130px;
+  padding: 170px 130px 150px 130px;
   z-index: 1000;
   position: relative;
   background-color: #3c3c3b;
@@ -1900,20 +1899,49 @@ h6,
   max-width: 1284px;
   overflow: auto;
   max-height: 100%;
+  height: 860px;
+  background-image: url(../images/bg-modal.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: auto 100%;
+  text-align: left;
 }
 .modal-window h1 {
   color: #ffffff;
   font-family: "foobar_pro";
+  text-align: left;
+  line-height: 1.2173;
 }
-.modal-window * {
-  text-align: center;
+.modal-window .line {
+  background-color: #ffffff;
+  height: 5px;
+  width: 50px;
+  margin-top: 40px;
 }
-.modal-window p {
-  width: 60%;
-  margin: auto;
+.modal-window .form-style {
+  margin-bottom: 30px;
+}
+.content-modal {
+  max-width: 400px;
 }
 .open {
   display: block;
+}
+@media (max-width: 1024px) {
+  .modal-window {
+    padding: 120px 50px 150px 50px;
+  }
+}
+@media (max-width: 500px) {
+  .modal-window {
+    padding: 100px 20px 150px 20px;
+  }
+  .modal-window h1 {
+    font-size: 30px;
+  }
+  .modal-window .btn-form {
+    margin-top: 50px;
+  }
 }
 /* Slider */
 .slick-slider {
