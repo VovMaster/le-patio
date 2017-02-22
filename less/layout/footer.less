@@ -1,0 +1,53 @@
+.main-footer{
+	border-bottom: 1px solid @color;
+	border-top: 1px solid @color;
+}
+.footer-logos{
+	float: right;
+	font-family: "Gotham Book";
+	font-size: 12px;
+
+	text-transform: uppercase;
+	> div{
+		float: left;
+		text-align: center;
+		> div{
+			img{
+				display: inline-block;
+				vertical-align: middle;
+				padding: 14px 22px;
+				border-right: 1px solid @color;
+			}
+			&:after{
+				content: "";
+				height: 90px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+		&:last-child{
+			img{
+				border-right: 0;
+			}
+		}
+	}
+}
+.logo-footer{
+	float: left;
+	width: 100px;
+}
+.footer-info{
+	margin-left: 100px;
+	padding-left: 70px;
+	h6{
+		font-family: "foobar_pro";
+	}
+}
+.footer-text{
+	float: left;
+	width: 50%;
+}
+.footer-block{
+	float: left;
+	width: 80%;
+}
