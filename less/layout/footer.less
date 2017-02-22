@@ -1,12 +1,26 @@
 .main-footer{
 	border-bottom: 1px solid @color;
 	border-top: 1px solid @color;
+	padding: 31px 0 16px;
+	position: relative;
+	overflow: hidden;
+}
+.bg-footer-left{
+	position: absolute;
+	top: -32px;
+	left: 0;
+
+}
+.bg-footer-right{
+	position: absolute;
+	top: -204px;
+	right: 2px;
 }
 .footer-logos{
 	float: right;
 	font-family: "Gotham Book";
 	font-size: 12px;
-
+	padding-top: 23px;
 	text-transform: uppercase;
 	> div{
 		float: left;
@@ -15,12 +29,12 @@
 			img{
 				display: inline-block;
 				vertical-align: middle;
-				padding: 14px 22px;
+				padding: 6px 20px;
 				border-right: 1px solid @color;
 			}
 			&:after{
 				content: "";
-				height: 90px;
+				height: 94px;
 				display: inline-block;
 				vertical-align: middle;
 			}
@@ -28,6 +42,7 @@
 		&:last-child{
 			img{
 				border-right: 0;
+				padding-right: 0;
 			}
 		}
 	}
@@ -35,19 +50,35 @@
 .logo-footer{
 	float: left;
 	width: 100px;
+	margin-top: 15px;
 }
 .footer-info{
 	margin-left: 100px;
 	padding-left: 70px;
-	h6{
+	font-size: 14px;
+	line-height: 14px;
+	p{
+		margin-bottom: 20px;
+	}
+	h4{
 		font-family: "foobar_pro";
+		margin-bottom: 0;
 	}
 }
 .footer-text{
 	float: left;
+	padding: 18px 42px 0;
 	width: 50%;
+	border-left: 1px solid #000;
+	&:first-child{
+		border-left: 0;
+		width: 43%;
+	}
+}
+.row-42{
+	margin: 0 -42px;
 }
 .footer-block{
 	float: left;
-	width: 80%;
+	width: 78%;
 }
